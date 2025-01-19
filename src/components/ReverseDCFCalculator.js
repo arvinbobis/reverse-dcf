@@ -183,9 +183,9 @@ const ReverseDCFCalculator = () => {
                 {/* Custom Growth Rate */}
                 {result && (
                     <div style={{ marginTop: '20px' }}>
-                        <h2 style={{ textAlign: 'center' }}>Custom Implied Growth Rate</h2>
+                        <h2 style={{ textAlign: 'center' }}>Past 5-YR FCF Growth Rate</h2>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            <label>Enter your own implied growth rate (%):</label>
+                            <label>Enter past 5-yr FCF growth rate (%):</label>
                             <input
                                 type="number"
                                 value={userGrowthRate}
@@ -196,12 +196,12 @@ const ReverseDCFCalculator = () => {
                                 onClick={handleCustomGrowthRate}
                                 style={{ padding: '10px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '5px' }}
                             >
-                                Calculate Custom Implied Stock Price
+                                Calculate Implied Stock Price
                             </button>
                         </div>
                         {customStockPrice && (
                             <>
-                                <h2 style={{ marginTop: '20px', textAlign: 'center' }}>Custom Implied Stock Price: ${customStockPrice}</h2>
+                                <h2 style={{ marginTop: '20px', textAlign: 'center' }}>Implied Stock Price: ${customStockPrice}</h2>
                                 {projectedPrices.length > 0 && (
                                     <div style={{ marginTop: '20px' }}>
                                         <h2 style={{ textAlign: 'center' }}>Projected Stock Prices (Next 3 Years)</h2>
