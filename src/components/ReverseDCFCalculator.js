@@ -5,11 +5,11 @@ const ReverseDCFCalculator = () => {
     const [formData, setFormData] = useState({
         current_stock_price: '',
         enterprise_value: '',
+        shares_outstanding: '',
         free_cash_flow: '',
         wacc: 8,
         terminal_growth_rate: 2,
-        projection_years: 5,
-        shares_outstanding: ''
+        projection_years: 5
     });
 
     const [result, setResult] = useState(null);
